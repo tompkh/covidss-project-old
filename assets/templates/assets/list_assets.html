@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% with get_quarantine asset in assets.all %}
+{{ asset.title }}
+{% endfor %}
+
+{% endblock %}
